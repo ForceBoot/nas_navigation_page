@@ -1,6 +1,6 @@
 # nas导航页
 
-## Project setup
+## 安装依赖
 ```
 npm install
 ```
