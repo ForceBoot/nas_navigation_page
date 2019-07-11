@@ -6,10 +6,10 @@
 				<a-row>
 					<a-col :span="12"
 					       :offset="6">
-						<icon-font type="iconcloudlogo"
+						<icon-font type="iconguizeyinqing"
 						           class="TOPICON" />
 						<span class="TOPTITLE">
-							WELCOME
+							WELCOME FORCEBOOT
 						</span>
 					</a-col>
 				</a-row>
@@ -21,7 +21,7 @@
 					        :dataSource="data">
 						<a-list-item class="lists"
 						             slot="renderItem"
-						             slot-scope="item, index">
+						             slot-scope="item">
 							<a :href="item.href"
 							   target="_blank">
 								<icon-font :type="item.type"
@@ -42,13 +42,13 @@ import particles from "./components/particles";
 import { Icon } from 'ant-design-vue';
 
 const IconFont = Icon.createFromIconfontCN({
-	scriptUrl: '//at.alicdn.com/t/font_1201034_mfll8gpu7h.js',
+	scriptUrl: '//at.alicdn.com/t/font_1201034_hnkf3dliitm.js',
 })
 const data = [
 	{
 		title: 'IKUAI',
 		type: 'iconluyou1',
-		href: 'http://home.addxx.com:5002'
+		href: 'http://home.addxx.com:5006'
 	},
 	{
 		title: 'LEDE',
@@ -63,25 +63,25 @@ const data = [
 	{
 		title: 'NAS SYSTEM',
 		type: 'iconnas',
-		href: 'http://nas.addxx.com:5000'
+		href: 'http://home.addxx.com:5000'
 	},
 	{
 		title: 'MOVIE',
 		type: 'iconmovie',
-		href: 'http://nas.addxx.com:5000/?launchApp=SYNO.SDS.VideoStation.AppInstance#!Home'
+		href: 'http://home.addxx.com:5000/?launchApp=SYNO.SDS.VideoStation.AppInstance#!Home'
 	},
 	{
 		title: 'CLOUD DISK',
 		type: 'iconclouddisk',
-		href: 'http://nas.addxx.com:5000/?launchApp=SYNO.SDS.Drive.Application'
+		href: 'http://home.addxx.com:5000/?launchApp=SYNO.SDS.Drive.Application'
 	},
 	{
 		title: 'PHOTO',
 		type: 'iconxiangce',
-		href: 'http://nas.addxx.com:8085/photo/#!Albums'
+		href: 'http://home.addxx.com:5000/?launchApp=SYNO.Photo.AppInstance#/my_library/timeline'
 	}
 	, {
-		title: 'PROXMOX VE',
+		title: 'PVE',
 		type: 'iconvmware',
 		href: 'https://home.addxx.com:5001'
 	}
@@ -119,15 +119,12 @@ body {
 	width: 100%;
 	height: 100%;
 }
+.container,
 .particles {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-}
-.container {
-	width: 100%;
-	height: 100%;
-	position: absolute;
+	overflow-y: auto;
 }
 .top {
 	margin-top: 10%;
